@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Plantify</string>
+    <string name="login_title">Plantify</string>
+    <string name="login_subtitle">Your Personal Crop Doctor</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_account">Don\'t have an account? <font color="#22c55e">Sign Up</font></string>
+</resources>

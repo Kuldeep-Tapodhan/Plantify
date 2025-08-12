@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="?android:attr/windowBackground"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Profile"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+            android:textStyle="bold" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="16dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_user_placeholder"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+            app:strokeColor="?attr/colorPrimary"
+            app:strokeWidth="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Deep Tapodhan"
+            android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="deep.tapodhan@example.com"
+            android:textColor="?android:textColorSecondary" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView android:src="@drawable/ic_location" style="@style/ProfileIcon"/>
+                    <TextView android:text="Rajkot, Gujarat" style="@style/ProfileText"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView android:src="@drawable/ic_farm" style="@style/ProfileIcon"/>
+                    <TextView android:text="5 Acres Farm" style="@style/ProfileText"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView android:src="@drawable/ic_crop" style="@style/ProfileIcon"/>
+                    <TextView android:text="Primary Crop: Cotton" style="@style/ProfileText"/>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="24dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/dark_mode_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dark Mode"
+                    app:icon="@drawable/ic_dark_mode"
+                    app:iconPadding="16dp"
+                    android:padding="8dp"
+                    android:textAppearance="@style/TextAppearance.Material3.BodyLarge" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Edit Profile" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Log Out"
+            app:backgroundTint="@color/red_error" />
+
+    </LinearLayout>
+</ScrollView>

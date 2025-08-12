@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_primary">#22c55e</color>
+    <color name="green_dark">#16a34a</color>
+    <color name="blue_primary">#3b82f6</color>
+    <color name="yellow_500">#eab308</color>
+    <color name="blue_500">#3b82f6</color>
+    <color name="red_error">#ef4444</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Light Theme -->
+    <color name="light_background">#f9fafb</color>
+    <color name="light_surface">#ffffff</color>
+    <color name="light_text_primary">#1f2937</color>
+    <color name="light_text_secondary">#6b7280</color>
+
+    <!-- Dark Theme -->
+    <color name="dark_background">#111827</color>
+    <color name="dark_surface">#1f2937</color>
+    <color name="dark_text_primary">#f9fafb</color>
+    <color name="dark_text_secondary">#9ca3af</color>
+
+    <!-- Chip Colors -->
+    <color name="chip_red_bg">#fee2e2</color>
+    <color name="chip_red_text">#b91c1c</color>
+    <color name="chip_green_bg">#dcfce7</color>
+    <color name="chip_green_text">#166534</color>
+</resources>
