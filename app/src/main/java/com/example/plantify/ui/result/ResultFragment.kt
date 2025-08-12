@@ -1,5 +1,6 @@
 package com.example.plantify.ui.result
 
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -24,9 +25,18 @@ class ResultFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Load a sample image for the demo
+        // Retrieve the image URI from the arguments
+        val imageUriString = arguments?.getString("imageUri")
+
+        val imageToLoad = if (imageUriString != null) {
+            Uri.parse(imageUriString)
+        } else {
+            // Load a placeholder if no URI is passed (e.g., from camera bitmap)
+            "https://placehold.co/400x300/f44336/ffffff?text=Diseased+Leaf"
+        }
+
         Glide.with(this)
-            .load("https://placehold.co/400x300/f44336/ffffff?text=Diseased+Leaf")
+            .load(imageToLoad)
             .into(binding.resultImage)
     }
 
