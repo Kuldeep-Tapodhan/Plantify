@@ -19,7 +19,7 @@
         android:theme="@style/Theme.Plantify"
         tools:targetApi="31">
 
-        <!-- Add this Provider block -->
+        <!-- This provider allows the camera app to securely write the photo to a file we control -->
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"

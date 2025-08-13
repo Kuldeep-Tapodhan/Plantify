@@ -61,11 +61,12 @@
                     tools:text="Tomato Late Blight" />
 
                 <TextView
+                    android:id="@+id/confidence_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="95% Confident"
                     android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
-                    android:textColor="?android:textColorSecondary" />
+                    android:textColor="?android:textColorSecondary"
+                    tools:text="95% Confident" />
 
                 <View
                     android:layout_width="match_parent"
@@ -74,6 +75,7 @@
                     android:background="?attr/dividerHorizontal" />
 
                 <TextView
+                    android:id="@+id/pesticide_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Suggested Pesticide"
@@ -81,13 +83,15 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/pesticide_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Chlorothalonil or Copper-based fungicides."
-                    android:textColor="?android:textColorSecondary" />
+                    android:textColor="?android:textColorSecondary"
+                    tools:text="Chlorothalonil or Copper-based fungicides." />
 
                 <TextView
+                    android:id="@+id/guide_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -96,12 +100,13 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/guide_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:lineSpacingExtra="4dp"
-                    android:text="1. Ensure good air circulation.\n2. Water at the base of the plant.\n3. Apply fungicide preventatively."
-                    android:textColor="?android:textColorSecondary" />
+                    android:textColor="?android:textColorSecondary"
+                    tools:text="1. Ensure good air circulation.\n2. Water at the base of the plant.\n3. Apply fungicide preventatively." />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
