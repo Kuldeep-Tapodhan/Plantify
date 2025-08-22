@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Plantify</string>
-    <string name="login_title">Plantify</string>
+    <string name="app_name">DocFarm</string>
+    <string name="login_title">DocFarm</string>
     <string name="login_subtitle">Your Personal Crop Doctor</string>
     <string name="email_address">Email Address</string>
     <string name="password">Password</string>

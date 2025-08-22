@@ -24,7 +24,7 @@ Potato Healthy
 Raspberry Healthy
 Soybean Healthy
 Squash Powdery Mildew
-Strawberry Leaf Scorch
+Strawberry Leaf Scorch6
 Strawberry Healthy
 Tomato Bacterial Spot
 Tomato Early Blight
