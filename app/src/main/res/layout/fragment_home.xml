@@ -27,11 +27,11 @@
             android:id="@+id/user_name_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Deep Tapodhan"
             android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/welcome_text" />
+            app:layout_constraintTop_toBottomOf="@id/welcome_text"
+            tools:text="User" />
 
         <!-- Weather Card -->
         <com.google.android.material.card.MaterialCardView
@@ -54,7 +54,7 @@
                     android:id="@+id/location_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rajkot, Gujarat"
+                    android:text="Fetching location..."
                     android:textColor="@color/white"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -63,7 +63,7 @@
                     android:id="@+id/temp_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="31°C"
+                    android:text="--"
                     android:textColor="@color/white"
                     android:textSize="34sp"
                     android:textStyle="bold"
@@ -71,15 +71,17 @@
                     app:layout_constraintTop_toBottomOf="@id/location_text" />
 
                 <TextView
+                    android:id="@+id/weather_description_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Partly Cloudy"
-                    android:textColor="@color/white"
                     android:alpha="0.9"
+                    android:textColor="@color/white"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/temp_text"/>
+                    app:layout_constraintTop_toBottomOf="@id/temp_text"
+                    tools:text="Partly Cloudy" />
 
                 <ImageView
+                    android:id="@+id/weather_icon"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:alpha="0.8"
@@ -217,6 +219,7 @@
             android:layout_marginTop="8dp"
             android:nestedScrollingEnabled="false"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/recent_scans_title"
             tools:itemCount="2"

@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:padding="32dp">
 
+        <!-- Header -->
         <LinearLayout
             android:id="@+id/header_layout"
             android:layout_width="wrap_content"
@@ -47,6 +48,7 @@
                 android:textColor="?android:textColorSecondary" />
         </LinearLayout>
 
+        <!-- Email Field -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/email_layout"
             style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
@@ -64,9 +66,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:text="deep.tapodhan@example.com" />
+                android:text="" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!-- Password Field -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/password_layout"
             style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
@@ -85,9 +88,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:text="password" />
+                android:text="" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!-- Login Button -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/login_button"
             android:layout_width="0dp"
@@ -100,6 +104,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/password_layout" />
 
+        <!-- Forgot Password -->
         <TextView
             android:id="@+id/forgot_password_text"
             android:layout_width="wrap_content"
@@ -111,6 +116,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/login_button" />
 
+        <!-- Sign Up Link -->
         <TextView
             android:id="@+id/signup_text"
             android:layout_width="wrap_content"

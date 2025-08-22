@@ -23,28 +23,31 @@
             android:textStyle="bold" />
 
         <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_image_view"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_marginTop="16dp"
             android:padding="4dp"
-            android:src="@drawable/dp"
             app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
             app:strokeColor="?attr/colorPrimary"
-            app:strokeWidth="2dp" />
+            app:strokeWidth="2dp"
+            tools:src="@drawable/ic_profile" />
 
         <TextView
+            android:id="@+id/name_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Deep Tapodhan"
             android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:text="User Name" />
 
         <TextView
+            android:id="@+id/email_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="deep.tapodhan@example.com"
-            android:textColor="?android:textColorSecondary" />
+            android:textColor="?android:textColorSecondary"
+            tools:text="user.name@example.com" />
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
@@ -63,9 +66,26 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
-                    <ImageView android:src="@drawable/ic_location" style="@style/ProfileIcon"/>
-                    <TextView android:text="Rajkot, Gujarat" style="@style/ProfileText"/>
+                    <ImageView android:src="@drawable/ic_profile" style="@style/ProfileIcon"/>
+                    <TextView
+                        android:id="@+id/phone_text_view"
+                        style="@style/ProfileText"
+                        tools:text="+91 98765 43210"/>
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView android:src="@drawable/ic_location" style="@style/ProfileIcon"/>
+                    <TextView
+                        android:id="@+id/location_text_view"
+                        style="@style/ProfileText"
+                        tools:text="Rajkot, Gujarat"/>
+                </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -73,8 +93,12 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
                     <ImageView android:src="@drawable/ic_farm" style="@style/ProfileIcon"/>
-                    <TextView android:text="5 Acres Farm" style="@style/ProfileText"/>
+                    <TextView
+                        android:id="@+id/farm_size_text_view"
+                        style="@style/ProfileText"
+                        tools:text="5 Acres Farm"/>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -82,7 +106,10 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
                     <ImageView android:src="@drawable/ic_crop" style="@style/ProfileIcon"/>
-                    <TextView android:text="Primary Crop: Cotton" style="@style/ProfileText"/>
+                    <TextView
+                        android:id="@+id/crop_text_view"
+                        style="@style/ProfileText"
+                        tools:text="Primary Crop: Cotton"/>
                 </LinearLayout>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
@@ -109,6 +136,7 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/edit_profile_button"
             style="@style/Widget.Material3.Button.OutlinedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
